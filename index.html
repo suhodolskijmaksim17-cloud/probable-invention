@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ваш бренд — решаем ключевую проблему</title>
+  <meta name="description" content="Короткое описание, 140–160 символов.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#">ВашБренд</a>
+      <nav class="menu">
+        <a href="#features">Преимущества</a>
+        <a href="#pricing">Цены</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a class="btn btn-primary" href="#contact">Оставить заявку</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Заголовок: чёткое обещание ценности</h1>
+      <p class="subtitle">1–2 предложения о том, какую проблему решаете и для кого.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#pricing">Посмотреть тарифы</a>
+        <a class="btn btn-secondary" href="#features">Узнать больше</a>
+      </div>
+      <img class="hero-image" src="https://picsum.photos/1200/500" alt="Иллюстрация продукта" />
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Быстро</h3>
+        <p>Короткий тезис, как ускоряете результат.</p>
+      </div>
+      <div class="card">
+        <h3>Надёжно</h3>
+        <p>Доказательство качества: цифры, кейсы, отзывы.</p>
+      </div>
+      <div class="card">
+        <h3>Выгодно</h3>
+        <p>Почему цена/ценность лучше, чем у конкурентов.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <h2>Тарифы</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Старт</h3>
+          <p class="price">от 3 900 ₽</p>
+          <ul>
+            <li>1 услуга</li>
+            <li>Поддержка 7 дней</li>
+          </ul>
+          <a class="btn btn-outline" href="#contact">Выбрать</a>
+        </div>
+        <div class="card featured">
+          <h3>Оптимум</h3>
+          <p class="price">от 7 900 ₽</p>
+          <ul>
+            <li>3 услуги</li>
+            <li>Приоритетная поддержка</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Выбрать</a>
+        </div>
+        <div class="card">
+          <h3>Про</h3>
+          <p class="price">от 12 900 ₽</p>
+          <ul>
+            <li>Безлимит</li>
+            <li>Персональный менеджер</li>
+          </ul>
+          <a class="btn btn-outline" href="#contact">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Оставить заявку</h2>
+      <form id="contactForm" class="form">
+        <div class="form-row">
+          <label>Имя
+            <input type="text" name="name" required />
+          </label>
+          <label>Телефон
+            <input type="tel" name="phone" required />
+          </label>
+        </div>
+        <label>Сообщение
+          <textarea name="message" rows="4" placeholder="Коротко опишите задачу"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Отправить</button>
+        <p id="formStatus" class="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 ВашБренд. Все права защищены.</p>
+      <p><a href="#">Политика конфиденциальности</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
